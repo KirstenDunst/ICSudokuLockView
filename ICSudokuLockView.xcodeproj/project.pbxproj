@@ -14,6 +14,7 @@
 		1F6C4D351E7B77CB002DBA7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F6C4D341E7B77CB002DBA7D /* Assets.xcassets */; };
 		1F6C4D381E7B77CB002DBA7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F6C4D361E7B77CB002DBA7D /* LaunchScreen.storyboard */; };
 		1F6C4D411E7B77F5002DBA7D /* ICSudokuLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C4D401E7B77F5002DBA7D /* ICSudokuLockView.m */; };
+		1F6C4D441E7BC5F9002DBA7D /* ICAlarmView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C4D431E7BC5F9002DBA7D /* ICAlarmView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		1F6C4D391E7B77CB002DBA7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F6C4D3F1E7B77F5002DBA7D /* ICSudokuLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSudokuLockView.h; sourceTree = "<group>"; };
 		1F6C4D401E7B77F5002DBA7D /* ICSudokuLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSudokuLockView.m; sourceTree = "<group>"; };
+		1F6C4D421E7BC5F9002DBA7D /* ICAlarmView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICAlarmView.h; sourceTree = "<group>"; };
+		1F6C4D431E7BC5F9002DBA7D /* ICAlarmView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICAlarmView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				1F6C4D2F1E7B77CB002DBA7D /* ViewController.m */,
 				1F6C4D3F1E7B77F5002DBA7D /* ICSudokuLockView.h */,
 				1F6C4D401E7B77F5002DBA7D /* ICSudokuLockView.m */,
+				1F6C4D421E7BC5F9002DBA7D /* ICAlarmView.h */,
+				1F6C4D431E7BC5F9002DBA7D /* ICAlarmView.m */,
 				1F6C4D311E7B77CB002DBA7D /* Main.storyboard */,
 				1F6C4D341E7B77CB002DBA7D /* Assets.xcassets */,
 				1F6C4D361E7B77CB002DBA7D /* LaunchScreen.storyboard */,
@@ -158,6 +163,7 @@
 				1F6C4D411E7B77F5002DBA7D /* ICSudokuLockView.m in Sources */,
 				1F6C4D301E7B77CB002DBA7D /* ViewController.m in Sources */,
 				1F6C4D2D1E7B77CB002DBA7D /* AppDelegate.m in Sources */,
+				1F6C4D441E7BC5F9002DBA7D /* ICAlarmView.m in Sources */,
 				1F6C4D2A1E7B77CB002DBA7D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +321,7 @@
 				1F6C4D3E1E7B77CB002DBA7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

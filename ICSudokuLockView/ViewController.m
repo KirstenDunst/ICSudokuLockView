@@ -24,8 +24,6 @@
     lockView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:lockView];
     
-    
-    
 }
 
 

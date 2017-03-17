@@ -7,12 +7,13 @@
 //
 
 #import "ICSudokuLockView.h"
+#import "ICAlarmView.h"
 
 typedef enum :NSInteger{
     buttonTag = 1000,
 }tags;
 
-@interface ICSudokuLockView ()<UIAlertViewDelegate>
+@interface ICSudokuLockView ()<ICAlarmViewDelegate>
 @property(nonatomic , strong)NSMutableArray *buttonsArr;
 @property(nonatomic , assign)CGPoint currentPoint;
 
@@ -109,8 +110,9 @@ typedef enum :NSInteger{
             str = [NSString stringWithFormat:@"%@-%ld",str,tempBtn.tag-buttonTag];
         }
     }
-    UIAlertView *alerView = [[UIAlertView alloc]initWithTitle:@"您的手势密码是" message:str delegate:self cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
-    [alerView show];
+    
+   ICAlarmView *alarm = [ICAlarmView alarmWithTitle:@"您的手势密码是" message:str delegate:self cancelButtonTitle:@"好的" otherButtonTitles:nil andButtonStateIsVertica:YES andIsContentTextfield:NO];
+    [alarm show];
     
 }
 
@@ -148,7 +150,7 @@ typedef enum :NSInteger{
 
 
 
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+- (void)alertView:(ICAlarmView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     for (UIButton *button in self.buttonsArr) {
         button.selected = NO;
     }
